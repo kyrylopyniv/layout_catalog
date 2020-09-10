@@ -23,12 +23,11 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  
-}
 
-.product-page {
-  margin-bottom: 50px;
-  display: flex;
+  &__page {
+    margin-bottom: 50px;
+    display: flex;
+  }
   
 }
 
