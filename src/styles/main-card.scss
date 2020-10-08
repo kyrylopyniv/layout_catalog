@@ -6,19 +6,30 @@
   width: 200px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding: 30px 14px 15px;
+  padding: 14px 14px 15px;
 
   &__img {
+    box-sizing: content-box;
+    padding: 13px 2px 17px;
     width: 160px;
     height: 134px;
-    margin: 0 5px;
+    align-self: center;
+    transition: scale , border, linear 0.5s;
+    border: 3px solid transparent;
+    
+  }
+
+  &__img:hover {
+    transform: scale(1.2);
+    border-color: #f3f3f3;
+    border-radius: 5px;
   }
 
   &__name {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    margin: 45px 0 5px;
+    margin: 25px 0 5px;
   }
 
   &__code {
@@ -31,6 +42,10 @@
   &__rate,
   &__price {
     @include rate-price;
+    
+  }
+
+  &__rate {
     margin-bottom: 20px;
   }
 
@@ -45,13 +60,14 @@
     text-align: right;
     font-size: $default-size;
     line-height: $default-height;
-
+    margin-bottom: 20px;
   }
 
   &__value {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
+    margin-bottom: 20px;
   }
 
   &__button {
